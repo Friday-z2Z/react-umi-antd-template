@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "YouShe";
+    src: url("@/assets/common/YouSheBiaoTiHei-2.ttf");
+}
+.wrap {
+    min-height: 100vh;
+
+    /***侧边栏***/
+    .sider {
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        overflow: hidden;
+        background: @base-color;
+    }
+
+    /***系统主体部分***/
+    .container {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.2s;
+
+        /***系统头部***/
+        .contentHeader {
+            background: transparent;
+            padding: 0;
+            .switchIcon {
+                margin-right: 10px;
+                cursor: pointer;
+                &:hover {
+                    color: @primary-color;
+                }
+            }
+        }
+
+        /***系统内容区域***/
+        .content {
+            margin: 0 12px;
+            padding: 10px;
+            margin-bottom: 0;
+            background: #fff;
+            position: relative;
+        }
+    }
+}
+
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.trigger:hover {
+    color: @primary-color;
+}
+
+
